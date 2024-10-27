@@ -39,6 +39,16 @@
 .tabItemActive {
     opacity: 1;
     color: white;
+    background-color: #ff6f61; /* 胶囊的背景颜色 */
+}
+
+.tabSlider {
+    position: absolute;
+    bottom: 0;
+    height: 4px; /* 胶囊的高度 */
+    background-color: #ff6f61; /* 胶囊的颜色 */
+    border-radius: 20px; /* 胶囊的圆角 */
+    transition: all 0.3s ease; /* 动画效果 */
 }
 
 .tabContent {
@@ -49,10 +59,8 @@
 
 .slider {
     position: absolute;
-    height: 80%;
-    background-color: #ff6f61;
-    border-radius: 20px;
-    transition: all 0.3s ease-in-out;
-    top: 10%;
-    z-index: 0;
+    bottom: 0;
+    height: 4px;
+    background-color: #ff6f61; /* 或者您想要的颜色 */
+    transition: all 0.3s ease;
 }
