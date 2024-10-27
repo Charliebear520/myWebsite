@@ -1,0 +1,58 @@
+/* answer.module.css */
+.container {
+    background-color: #edf2ff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.tabContainer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.tabItem {
+    font-size: 1rem;
+    cursor: pointer;
+    color: black;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.tabItem:hover {
+    opacity: 1;
+}
+
+.tabItemActive {
+    opacity: 1;
+    color: white;
+}
+
+.tabContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    position: absolute;
+    height: 80%;
+    background-color: #ff6f61;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    top: 10%;
+    z-index: 0;
+}

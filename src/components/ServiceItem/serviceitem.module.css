@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+    padding:1rem 3rem;
+    width: 50%;
+}
+
+.image{
+    position: absolute;
+    bottom:5em;
+}

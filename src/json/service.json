@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Design",
+        "image":"/services/webdesign.svg"
+    },
+    {
+        "id": 2,
+        "name": "Web Development",
+        "image":"/services/webdev.svg"
+    },
+    {
+        "id": 3,
+        "name": "App Development",
+        "image":"/services/appdev.svg"
+    }
+]

@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .h1box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 3rem; */
+  }
+  
+  .row{
+    padding: 4rem 8rem;
+  }
