@@ -6,6 +6,7 @@ export default function Services({ services }) {
   return (
     <div className={styles.container}>
       <div className={styles.h1box}>
+      <img src="/svg/dots-light.svg" alt="Shape" />
         <h1>Services</h1>
       </div>
       <Row>

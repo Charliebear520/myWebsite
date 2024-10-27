@@ -8,6 +8,7 @@ export default function Projects({projects, handleCategoryChange}) {
     
     <div className={styles.container}>
       <div className={styles.h1box}>
+      <img src="/svg/dots-light.svg" alt="Shape" />
         <h1>Projects</h1>
       </div>
       <NavBar onCategoryChange={handleCategoryChange} />

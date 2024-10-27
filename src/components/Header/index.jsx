@@ -11,9 +11,13 @@ const Header = () => {
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
-    const element = document.getElementById(tab);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (tab === "Home") {
+      window.scrollTo({ top: 0, behavior: "smooth" }); // 滚动到页面顶部
+    } else {
+      const element = document.getElementById(tab);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
