@@ -61,7 +61,7 @@ const Hero = () => {
                     className={styles.buttonbox}
                   >
                     {/* 按鈕文字 */}
-                    Click Me
+                    Contact Me
                     {/* 使用 Framer Motion 來控制箭頭的旋轉 */}
                     <motion.div
                       style={{ display: "inline-block", marginLeft: "8px" }}
