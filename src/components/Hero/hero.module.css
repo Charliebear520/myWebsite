@@ -1,6 +1,7 @@
 .background {
     background: linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212));
     padding: 4rem 8rem;
+    margin-top: 100px;    
   }
   
   .ButtonBox {
@@ -52,4 +53,3 @@
     font-size: xx-large;
     font-weight: bolder;
   }
-  

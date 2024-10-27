@@ -1,3 +1,58 @@
-.container{
-    background-color: antiquewhite;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  position: fixed; /* 确保固定在顶部 */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* 确保在其他元素之上 */
+  background: linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212));
+  height: 100px;
+}
+
+.scrolled {
+  background: #ffffff; /* 滚动后背景色 */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 添加底部阴影 */
+  height: 55px;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* 导航项之间的间距 */
+}
+
+.nav li {
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.nav li:hover {
+  color: #ff6f61; /* 悬停时的颜色 */
+}
+
+.active {
+  font-weight: bold;
+  color: #ff6f61; /* 选中项的颜色 */
+}
+
+.slider {
+  position: absolute;
+  bottom: -5px; /* 调整滑动指示器的位置 */
+  height: 2px; /* 滑动指示器的高度 */
+  background-color: #ff6f61; /* 滑动指示器的颜色 */
+  transition: left 0.3s ease, width 0.3s ease; /* 添加动画效果 */
+}
+
+.logo{
+    max-width: 100%; 
+    height: auto; 
+    max-height: 30px;
 }

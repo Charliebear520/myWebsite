@@ -1,14 +1,19 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border:1px solid black;
-    padding:1rem 3rem;
+    border: 1px solid black;
+    padding: 1rem 3rem;
     width: 50%;
+    transition: transform 0.3s ease; /* 添加过渡效果 */
 }
 
-.image{
+.container:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大 */
+}
+
+.image {
     position: absolute;
-    bottom:5em;
+    bottom: 5em;
 }

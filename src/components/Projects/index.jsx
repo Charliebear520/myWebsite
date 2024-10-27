@@ -5,6 +5,7 @@ import NavBar from "../NavBar";
 
 export default function Projects({projects, handleCategoryChange}) {
   return (
+    
     <div className={styles.container}>
       <div className={styles.h1box}>
         <h1>Projects</h1>
