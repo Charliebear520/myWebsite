@@ -1,0 +1,45 @@
+.container {
+  padding: 20px;
+}
+
+.title {
+  color: #ff6f61;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+
+.container h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.container p {
+  margin: 0;
+}
+
+.timelineContent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  gap:1rem;
+}
+
+.period {
+  color: #888;
+  font-style: italic;
+  margin-top: 5px; /* 可以根据需要调整间距 */
+  display: flex;
+  align-items: center; /* 使图标和文本垂直居中 */
+}
+
+.calendarIcon {
+  font-size: 16px;
+  color: #ff6f61;
+  margin-right: 5px; /* 图标与文本之间的间距 */
+}

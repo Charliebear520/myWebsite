@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "school": "New Taipei Municipal HaiShan High School",
+    "department": "General",
+    "period": "2017 - 2019"
+  },
+  {
+    "id": 2,
+    "school": "National Taipei University of Education",
+    "department": "Digital Technology Design",
+    "period": "2020 - 2024"
+  },
+  {
+    "id": 3,
+    "school": "National Taipei University of Education",
+    "department": "Master Program in Toy and Game Design",
+    "period": "2024 - 2026"
+  }
+]
