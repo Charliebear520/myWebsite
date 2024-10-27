@@ -14,7 +14,7 @@ export default function Projects({projects, handleCategoryChange}) {
         {projects.map((project) => (
           <Col
             key={project.id}
-            sm={{ span: 24 }}
+            sm={{ span: 12 }}
             lg={{ span: 8 }}
             xl={{ span: 6 }}
             xxl={{ span: 6 }}

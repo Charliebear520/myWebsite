@@ -2,18 +2,18 @@ import React from "react";
 import { Timeline, ConfigProvider } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faGraduationCap,
+  faBriefcase,
   faCalendarAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import educationData from "../../json/education.json";
-import styles from "./qualification.module.css";
+import workData from "../../json/work.json";
+import styles from "./work.module.css";
 
-export default function Qualification() {
+export default function Works() {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>
-        <FontAwesomeIcon icon={faGraduationCap} className={styles.icon} />
-        Education
+        <FontAwesomeIcon icon={faBriefcase} className={styles.icon} />
+        Experience
       </h2>
       <ConfigProvider
         theme={{
@@ -29,12 +29,12 @@ export default function Qualification() {
         }}
       >
         <Timeline>
-          {educationData.map((edu) => (
-            <Timeline.Item key={edu.id} color="#ff6f61">
+          {workData.map((work) => (
+            <Timeline.Item key={work.id} color="#ff6f61">
               <div className={styles.timelineContent}>
                 <div>
-                  <h3>{edu.school}</h3>
-                  <p>{edu.department}</p>
+                  <h3>{work.company}</h3>
+                  <p>{work.job}</p>
                 </div>
                 <div>
                   <p className={styles.period}>
@@ -42,7 +42,7 @@ export default function Qualification() {
                       icon={faCalendarAlt}
                       className={styles.calendarIcon}
                     />
-                    {edu.period}
+                    {work.period}
                   </p>
                 </div>
               </div>

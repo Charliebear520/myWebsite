@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "company": "ABC Software Company",
+    "job": "Junior Frontend Engineer",
+    "period": "2027 - 2029"
+  },
+  {
+    "id": 2,
+    "company": "DEF Software Company",
+    "job": "Backend Engineer",
+    "period": "2029 - 2037"
+  },
+  {
+    "id": 3,
+    "company": "KJ Degital Design Lab",
+    "job": "Founder",
+    "period": "2037 - 2040"
+  }
+]

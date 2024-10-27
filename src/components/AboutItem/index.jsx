@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./about.module.css";
 import Personal from "../PersonalInfo";
-import Qualification from "../Qualification";
-import Skills from "../Skills";
+import Qualification from "../Education";
+import Skills from "../Works";
 
 const AboutItem = () => {
   const [activeTab, setActiveTab] = useState("1");
@@ -11,8 +11,8 @@ const AboutItem = () => {
 
   const items = [
     { key: "1", label: "Personal Info", component: <Personal /> },
-    { key: "2", label: "Qualifications", component: <Qualification /> },
-    { key: "3", label: "Skills", component: <Skills /> },
+    { key: "2", label: "Education", component: <Qualification /> },
+    { key: "3", label: "Experience", component: <Skills /> },
   ];
 
   useEffect(() => {
