@@ -11,6 +11,8 @@ import {
   ArrowUpOutlined,
   DownloadOutlined,
 } from "@ant-design/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDesktop,faListCheck,faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   const titleVariants = {
@@ -91,13 +93,44 @@ const Hero = () => {
                   <DownloadOutlined />
                 </Button>
               </div>
-              <div className={styles.infoBox}>
-                <YoutubeFilled />
-                <LinkedinFilled />
-                <GithubFilled />
-                <FacebookFilled />
-                <InstagramFilled />
-              </div>
+              {/* <div className={styles.infoBox}>
+                <a
+                  href="https://github.com/Charliebear520"
+                  rel="noopener noreferrer"
+                >
+                  <YoutubeFilled style={{ fontSize: "24px", color: "white" }} />
+                </a>
+                <a
+                  href="https://github.com/Charliebear520"
+                  rel="noopener noreferrer"
+                >
+                  <LinkedinFilled
+                    style={{ fontSize: "24px", color: "white" }}
+                  />
+                </a>
+                <a
+                  href="https://github.com/Charliebear520"
+                  rel="noopener noreferrer"
+                >
+                  <GithubFilled style={{ fontSize: "24px", color: "white" }} />
+                </a>
+                <a
+                  href="https://github.com/Charliebear520"
+                  rel="noopener noreferrer"
+                >
+                  <FacebookFilled
+                    style={{ fontSize: "24px", color: "white" }}
+                  />
+                </a>
+                <a
+                  href="https://github.com/Charliebear520"
+                  rel="noopener noreferrer"
+                >
+                  <InstagramFilled
+                    style={{ fontSize: "24px", color: "white" }}
+                  />
+                </a>
+              </div> */}
             </div>
           </Col>
           <Col sapn={12} className={styles.col}>
@@ -147,6 +180,30 @@ const Hero = () => {
                   zIndex: 3,
                 }}
               />
+              <div className={styles.badgebox}>
+                <FontAwesomeIcon
+                  icon={faDesktop}
+                  style={{ fontSize: "24px", color: "#ff6f61" }}
+                />
+                <div className={styles.badgetitle}>4</div>
+                <div className={styles.badgetext}>years of experience</div>
+              </div>
+              <div className={styles.badgebox2}>
+                <FontAwesomeIcon
+                  icon={faListCheck}
+                  style={{ fontSize: "24px", color: "#ff6f61" }}
+                />
+                <div className={styles.badgetitle}>7</div>
+                <div className={styles.badgetext}>finished projects</div>
+              </div>
+              <div className={styles.badgebox3}>
+                <FontAwesomeIcon
+                  icon={faCode}
+                  style={{ fontSize: "24px", color: "#ff6f61" }}
+                />
+                <div className={styles.badgetitle}>6</div>
+                <div className={styles.badgetext}>Coding Skills</div>
+              </div>
             </div>
           </Col>
         </Row>
