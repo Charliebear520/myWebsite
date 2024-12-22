@@ -14,9 +14,9 @@ export default function Services({ services }) {
           <Col
             key={service.id}
             sm={{ span: 24 }}
+            md={{ span: 24 }}
             lg={{ span: 8 }}
             xl={{ span: 8 }}
-            xxl={{ span: 8 }}
             className={styles.h1box}
           >
             <ServiceItem service={service} />

@@ -1,0 +1,58 @@
+@media(min-width:1024px) {
+    .showMobile {
+        display: none;
+    }
+}
+
+/* .showMobile {
+    margin-top:2rem;
+} */
+
+.baseMenuBar {
+    display: flex;
+    position: relative;
+    background-color: antiquewhite;
+    width: 24px;
+    height: 3px;
+}
+
+.hamMenuBar1 {
+    composes: baseMenuBar;
+    top: 5px;
+    left: 10px;
+    transition: all 0.25s linear;
+}
+
+.hamMenuBar2 {
+    composes: baseMenuBar;
+    bottom: 5px;
+    right: 10px;
+    transition: all 0.25s linear;
+}
+
+.hamMenuBar1_Touch {
+    composes: hamMenuBar1;
+    width: 30px;
+    top: 0;
+    opacity: 1;
+    transform: rotate(45deg);
+}
+
+.hamMenuBar2_Touch {
+    composes: hamMenuBar2;
+    width: 30px;
+    bottom: 0px;
+    opacity: 1;
+    transform: rotate(-45deg);
+}
+
+.hambox {
+    background-color: #ff6f61;
+    width: 40px;
+    height: 40px;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}

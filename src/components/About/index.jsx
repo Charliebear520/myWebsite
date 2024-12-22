@@ -15,6 +15,7 @@ export default function About() {
           lg={{ span: 12 }}
           xl={{ span: 12 }}
           xxl={{ span: 12 }}
+          className={styles.col}
         >
           <div
             style={{

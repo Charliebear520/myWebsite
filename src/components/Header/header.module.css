@@ -1,3 +1,5 @@
+/* header.module.css */
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -10,22 +12,58 @@
   z-index: 1000; /* 确保在其他元素之上 */
   background: linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212));
   height: 100px;
+  
 }
 
 .scrolled {
   background: #ffffff; /* 滚动后背景色 */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 添加底部阴影 */
-  height: 55px;
+  height: 100px;
+}
+
+.container.open {
+  background: #ffffff; /* isOnTouch 状态时的背景色 */
+  height: 50vh; /* isOnTouch 状态时的高度 */
+  flex-direction: column; /* 垂直排列 */
+  justify-content: flex-start; /* 顶部对齐 */
+  transition: all 0.3s ease-in-out;
+  padding-top:2rem;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* 导航项之间的间距 */
+  margin-top: 20px; /* 导航项距离顶部的间距 */
 }
 
 .nav {
   position: relative;
+  display: none; /* 默认隐藏 */
+}
+
+.nav.open {
+  display: flex; /* isOnTouch 状态时显示 */
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    display: flex; /* 大於 1024px 時顯示 */
+  }
+
+  .navList {
+    flex-direction: row !important; /* 大於 1024px 時水平排列 */
+    margin-top: 0; /* 移除顶部间距 */
+  }
 }
 
 .nav ul {
   list-style: none;
   display: flex;
   gap: 20px; /* 导航项之间的间距 */
+  flex-direction: column; /* 垂直排列 */
+  align-items: center; /* 居中对齐 */
 }
 
 .nav li {
@@ -51,8 +89,26 @@
   transition: left 0.3s ease, width 0.3s ease; /* 添加动画效果 */
 }
 
-.logo{
-    max-width: 100%; 
-    height: auto; 
-    max-height: 30px;
+.logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 30px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.logo.hidden {
+  display:none;
+}
+
+.hamburgerMenu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.hambox{
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
 }

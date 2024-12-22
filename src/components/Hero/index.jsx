@@ -12,7 +12,7 @@ import {
   DownloadOutlined,
 } from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDesktop,faListCheck,faCode } from "@fortawesome/free-solid-svg-icons";
+import { faDesktop, faListCheck, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   const titleVariants = {
@@ -33,7 +33,12 @@ const Hero = () => {
         variants={fadeInVariants}
       >
         <Row className={styles.background}>
-          <Col span={12}>
+          <Col
+            sm={{ span: 24 }}
+            md={{ span: 24 }}
+            lg={{ span: 12 }}
+            xl={{ span: 12 }}
+          >
             <div className={styles.box}>
               <h4 className={styles.h4}>WEB DEVELOPER</h4>
               <motion.h1 className={styles.h1} variants={titleVariants}>
@@ -133,7 +138,12 @@ const Hero = () => {
               </div> */}
             </div>
           </Col>
-          <Col sapn={12} className={styles.col}>
+          <Col
+            sm={{ span: 24 }}
+            md={{ span: 12 }}
+            lg={{ span: 12 }}
+            xl={{ span: 12 }} className={styles.col}
+          >
             <div
               style={{
                 position: "relative",

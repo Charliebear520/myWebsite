@@ -2,6 +2,7 @@
   background: linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212));
   padding: 4rem 8rem;
   margin-top: 100px;
+  width:100%;
 }
 
 .ButtonBox {
@@ -94,4 +95,17 @@
 .badgetext {
   font-size: medium;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media (max-width:768px){
+  .col{
+    display:none;
+  }
+  .box{
+    align-items: center;
+  }
+  .ButtonBox {
+    width: 100%;
+    justify-content: center;
+  }
 }
