@@ -5,65 +5,71 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 4rem;
-  position: fixed; /* 确保固定在顶部 */
+  position: fixed;
+  /* 确保固定在顶部 */
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* 确保在其他元素之上 */
+  z-index: 1000;
+  /* 确保在其他元素之上 */
   background: linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212));
   height: 100px;
-  
+
 }
 
 .scrolled {
-  background: #ffffff; /* 滚动后背景色 */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 添加底部阴影 */
+  background: #ffffff;
+  /* 滚动后背景色 */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* 添加底部阴影 */
   height: 100px;
 }
 
 .container.open {
-  background: #ffffff; /* isOnTouch 状态时的背景色 */
-  height: 50vh; /* isOnTouch 状态时的高度 */
-  flex-direction: column; /* 垂直排列 */
-  justify-content: flex-start; /* 顶部对齐 */
+  background: #ffffff;
+  /* isOnTouch 状态时的背景色 */
+  height: 100vh;
+  /* isOnTouch 状态时的高度 */
+  flex-direction: column;
+  /* 垂直排列 */
+  justify-content: flex-start;
+  /* 顶部对齐 */
   transition: all 0.3s ease-in-out;
-  padding-top:2rem;
+  padding-top: 2rem;
 }
+
 
 .navList {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* 导航项之间的间距 */
-  margin-top: 20px; /* 导航项距离顶部的间距 */
+  gap: 20px;
+  /* 导航项之间的间距 */
+  margin-top: 20px;
+  /* 导航项距离顶部的间距 */
+  padding: 0;
 }
 
 .nav {
   position: relative;
-  display: none; /* 默认隐藏 */
+  display: none;
+  /* 默认隐藏 */
 }
 
 .nav.open {
-  display: flex; /* isOnTouch 状态时显示 */
-}
-
-@media (min-width: 1024px) {
-  .nav {
-    display: flex; /* 大於 1024px 時顯示 */
-  }
-
-  .navList {
-    flex-direction: row !important; /* 大於 1024px 時水平排列 */
-    margin-top: 0; /* 移除顶部间距 */
-  }
+  display: flex;
+  /* isOnTouch 状态时显示 */
 }
 
 .nav ul {
   list-style: none;
   display: flex;
-  gap: 20px; /* 导航项之间的间距 */
-  flex-direction: column; /* 垂直排列 */
-  align-items: center; /* 居中对齐 */
+  gap: 20px;
+  /* 导航项之间的间距 */
+  flex-direction: column;
+  /* 垂直排列 */
+  align-items: center;
+  /* 居中对齐 */
 }
 
 .nav li {
@@ -73,21 +79,29 @@
 }
 
 .nav li:hover {
-  color: #ff6f61; /* 悬停时的颜色 */
+  color: #ff6f61;
+  /* 悬停时的颜色 */
 }
 
 .active {
   font-weight: bold;
-  color: #ff6f61; /* 选中项的颜色 */
+  color: #ff6f61;
+  /* 选中项的颜色 */
 }
 
 .slider {
   position: absolute;
-  bottom: -5px; /* 调整滑动指示器的位置 */
-  height: 2px; /* 滑动指示器的高度 */
-  background-color: #ff6f61; /* 滑动指示器的颜色 */
-  transition: left 0.3s ease, width 0.3s ease; /* 添加动画效果 */
+  bottom: -5px;
+  /* 调整滑动指示器的位置 */
+  height: 2px;
+  /* 滑动指示器的高度 */
+  background-color: #ff6f61;
+  /* 滑动指示器的颜色 */
+  transition: left 0.3s ease, width 0.3s ease;
+  /* 添加动画效果 */
 }
+
+
 
 .logo {
   max-width: 100%;
@@ -97,7 +111,7 @@
 }
 
 .logo.hidden {
-  display:none;
+  display: none;
 }
 
 .hamburgerMenu {
@@ -106,9 +120,58 @@
   right: 10px;
 }
 
-.hambox{
-  width:100%;
+.hambox {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   margin-top: 2rem;
+}
+
+.socialbox {
+  display: flex;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* 控制图标之间的间距 */
+  margin-top: 3rem;
+  /* 控制两行之间的间距 */
+  font-size: xx-large;
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    display: flex;
+    /* 大於 1024px 時顯示 */
+  }
+
+  .navList {
+    flex-direction: row !important;
+    /* 大於 1024px 時水平排列 */
+    margin-top: 0;
+    /* 移除顶部间距 */
+  }
+
+  .socialbox {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slider {
+    display: none;
+    /* 小於 1024px 時隱藏 */
+  }
+}
+
+@media (max-width:768px) {
+  .nav li {
+    font-size: xx-large;
+  }
+
+  .active {
+    font-size: xx-large;
+  }
 }

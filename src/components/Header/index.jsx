@@ -1,6 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./header.module.css";
 import HamburgerMenu from "../HamburgerMenu";
+import {
+  FacebookFilled,
+  InstagramFilled,
+  LinkedinFilled,
+  MailFilled,
+  YoutubeFilled,
+} from "@ant-design/icons";
 import { motion } from "framer-motion";
 import logo from "/svg/logo.svg"; // 导入logo.svg
 
@@ -84,7 +91,6 @@ const Header = () => {
     //   </nav>
     // </div>
     <div className={`${styles.container} ${isOnTouch ? styles.open : ""} ${isScrolled ? styles.scrolled : ""}`}>
-
       <img src={logo} alt="Logo" className={`${styles.logo} ${isOnTouch ? styles.hidden : ""}`} /> {/* 使用logo.svg */}
       <HamburgerMenu onClick={() => setIsOnTouch(!isOnTouch)} isOnTouch={isOnTouch} />
       <nav className={`${styles.nav} ${isOnTouch ? styles.open : ""}`} ref={navRef} open={isOnTouch} onClose={() => setIsOnTouch(false)}>
@@ -105,6 +111,27 @@ const Header = () => {
           transition={{ type: "spring", stiffness: 300 }}
         />
       </nav>
+      {isOnTouch && (
+        <div className={styles.socialbox}>
+          <div className={styles.contactInfo}>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+              <YoutubeFilled style={{ color: "#ff6f61" }} />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <InstagramFilled style={{ color: "#ff6f61" }} />
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <FacebookFilled style={{ color: "#ff6f61" }} />
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <LinkedinFilled style={{ color: "#ff6f61" }} />
+            </a>
+            <a href="50406s97116@gmail.com">
+              <MailFilled style={{ color: "#ff6f61" }} />
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
