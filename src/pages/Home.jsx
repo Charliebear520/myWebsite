@@ -9,6 +9,7 @@ import About from "../components/About";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useOnScreen } from "../hooks/useOnScreen";
+import { FloatButton } from "antd";
 
 export default function Home() {
   const { projects, handleCategoryChange } = useProjectFilter();
@@ -70,6 +71,7 @@ export default function Home() {
         />
       </motion.div>
       <Footer />
+      <FloatButton.BackTop />
     </div>
   );
 }
