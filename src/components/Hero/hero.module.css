@@ -108,4 +108,17 @@
     width: 100%;
     justify-content: center;
   }
+  .background {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .background {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
 }
